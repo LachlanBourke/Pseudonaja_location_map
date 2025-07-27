@@ -2,6 +2,18 @@
 #Author: Lachlan Bourke
 #2024-08-15
 
+#NOTE (2025-07-27): 
+#Tmap updated to version 4. Below code will not work with version 4.
+#use previos version
+
+
+detach("package:tmap", unload = TRUE)
+
+#Choose the location of your download folder
+install.packages("C:/Users/uqlbour5/Downloads/tmap_3.3-4.tar.gz", repos = NULL, type = "source")
+library(tmap)
+  
+
 ### Get map file ####
 #https://cran.r-project.org/web/packages/geodata/geodata.pdf
 library(geodata)
